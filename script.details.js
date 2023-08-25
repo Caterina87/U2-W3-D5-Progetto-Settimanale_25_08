@@ -16,7 +16,7 @@ function displayProducts(productId) {
     .then((resp) => resp.json())
     .then((data) => {
       console.log(data);
-      const container = document.getElementById("event-details");
+      const container = document.getElementById("product-details");
       container.innerHTML = `
                     <h1 class="fw-bolder">${data.name}</h1>
                     <p class="font-monospace">${data.description}</p>

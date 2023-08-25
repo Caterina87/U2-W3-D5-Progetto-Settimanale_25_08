@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Details page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,7 +15,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">CRUD Agenda</a>
+        <a class="navbar-brand" href="#">My Closet</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="./homepage.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./backoffice.html">Backoffice</a>
@@ -40,19 +40,19 @@
       </div>
     </nav>
     <img
-      src="https://images.unsplash.com/photo-1529651737248-dad5e287768e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1301&q=80"
-      alt="appointment image"
+      src="https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="Closet image"
       style="height: 30vh; width: 100%; object-fit: cover"
     />
 
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 mt-4">
-          <h4 class="mt-5 mb-2">Dettagli</h4>
-          <div id="event-details">
-            <div class="spinner-border text-success" role="status">
+          <h4 class="mt-5 mb-2">Details</h4>
+          <div id="product-details">
+            <!-- <div class="spinner-border text-success" role="status">
               <span class="visually-hidden">Loading...</span>
-            </div>
+            </div> -->
             <!-- <h1 class="fw-bolder">Event Name</h1>
                     <p class="font-monospace">01/01/2020</p>
                     <p>Event Description</p>
@@ -63,7 +63,7 @@
                         <li class="list-group-item px-2">updatedAt: 06/07/2020</li>
                     </ul> -->
           </div>
-          <button class="btn btn-success mt-3" onclick="handleLink()">Modifica Evento</button>
+          <button class="btn btn-outline-secondary mt-3" onclick="handleLink()">Modifica Prodotto</button>
         </div>
       </div>
     </div>
@@ -72,6 +72,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script src="scriptDettaglio.js"></script>
+    <script src="script.details.js"></script>
   </body>
 </html>
