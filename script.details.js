@@ -17,15 +17,13 @@ function displayProducts(productId) {
     .then((data) => {
       console.log(data);
       const container = document.getElementById("product-details");
-      container.innerHTML = `
-                    <h1 class="fw-bolder">${data.name}</h1>
-                    <p class="font-monospace">${data.description}</p>
-                    <p>${description}</p>
-                    <h6 class="bg-light px-2 py-3">Server Details</h6>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item px-2"><strong>id:</strong> ${_id}</li>
-                        <li class="list-group-item px-2"><strong>createdAt:</strong> ${createdAt}</li>
-                        <li class="list-group-item px-2"><strong>updatedAt:</strong> ${updatedAt}</li>
-                    </ul>`;
+      container.innerHTML = `<div class="card mb-3">
+                    <img src="${data.imageUrl}" class="card-img-top" alt="bagImage">
+                    <div class="card-body">
+                      <h5 class="card-title">${data.name}</h5>
+                      <p class="card-text">${data.description}</p>
+                      <p class="card-text">${data.price} €</p>
+                    </div>
+                  </div>`;
     });
 }
