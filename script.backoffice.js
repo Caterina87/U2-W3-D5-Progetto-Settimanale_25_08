@@ -1,6 +1,6 @@
 function createProduct(event) {
   event.preventDefault();
-  console.log("ci sei?");
+
   const newProduct = {
     name: document.getElementById("name").value,
     description: document.getElementById("description").value,
@@ -20,7 +20,5 @@ function createProduct(event) {
     },
   })
     .then((resp) => resp.json())
-    .then((data) => {
-      console.log(data);
-    });
+    .then((data) => {});
 }
