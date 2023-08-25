@@ -17,13 +17,19 @@ function displayProducts(productId) {
     .then((data) => {
       console.log(data);
       const container = document.getElementById("product-details");
-      container.innerHTML = `<div class="card mb-3">
-                    <img src="${data.imageUrl}" class="card-img-top" alt="bagImage">
-                    <div class="card-body">
-                      <h5 class="card-title">${data.name}</h5>
-                      <p class="card-text">${data.description}</p>
-                      <p class="card-text">${data.price} €</p>
-                    </div>
-                  </div>`;
+      container.innerHTML = `<div class="card mb-3" style="max-width: 600px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="${data.imageUrl}" class="img-fluid rounded-start" alt="bagImage">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">${data.name}</h5>
+        <p class="card-text">${data.description}</p>
+        <p class="card-text">${data.price} €</p>
+      </div>
+    </div>
+  </div>
+</div>`;
     });
 }
