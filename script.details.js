@@ -33,3 +33,7 @@ function displayProducts(productId) {
 </div>`;
     });
 }
+
+const handleLink = () => {
+  window.location.assign("./backoffice.html?product_Id=" + productId);
+};
